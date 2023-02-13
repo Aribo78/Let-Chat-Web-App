@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwiter</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+	  .row.content {height: 1500px}
+
+	  .sidenav {
+		background-color: #f1f1f1;
+		height: auto;
+	  }
+
+	  footer {
+		background-color: #555;
+		color: white;
+		padding: 15px;
+	  }
+	  
+	  @media screen and (max-width: 767px) {
+		.sidenav {
+		  height: auto;
+		  padding: 15px;
+		}
+		.row.content {height: auto;} 
+	  }
+	</style>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
+</head>
+<body>
+	<div class="form-group">
+		<label >User Name:</label>
+	   <input type="text" id="user_name" class="form-control" placeholder="User Name">
+	  </div>
+
+	  <button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
